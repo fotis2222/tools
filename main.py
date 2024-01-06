@@ -8,6 +8,7 @@ select a mode:
 (2) dice roller
 (3) current date and time (for some reason, YY-MM-DD)
 (4) calculator
+(5) tip calculator
 more coming soon...""")
 mode = input()
 if mode == "1":
@@ -49,6 +50,13 @@ type quit to quit""")
             print("""
 ENTER THE NUMBER NEXT TO THE OPERATION WHAT DO YOU NOT UNDERSTAND
 uhh sowwy OwO""")
+elif mode == "5":
+    print("how much did it cost")
+    cost = float(input())
+    print("% of tip")
+    percent = float(input())
+    tip = (cost * (percent / 100))
+    print(f"tip an extra ${tip}")
 else:
     print("press the number next to the mode you want")
 
