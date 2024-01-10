@@ -9,6 +9,7 @@ select a mode:
 (3) current date and time (for some reason, YY-MM-DD)
 (4) calculator
 (5) tip calculator
+(6) converter
 more coming soon...""")
 mode = input()
 if mode == "1":
@@ -57,6 +58,23 @@ elif mode == "5":
     percent = float(input())
     tip = (cost * (percent / 100))
     print(f"tip an extra ${tip}")
+elif mode == "6":
+    print("""
+convert:
+(1) kg to lbs
+(2) lbs to kg
+more coming soon...""")
+    conversion = input()
+    if conversion == "1":
+        print("how many kgs:")
+        kg = float(input())
+        print(f"~{kg * 2.2} lbs")
+    elif conversion == "2":
+        print("how many lbs:")
+        lbs = float(input())
+        print(f"~{lbs / 2.2} kg")
+    else:
+        print("the number next to the conversionnnnnnnnnnnnnnn")
 else:
     print("press the number next to the mode you want")
 
